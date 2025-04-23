@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+#categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  background-color: #f4f4fb;
+  padding: 16px;
+  border-radius: 8px;
+  width: 392px;
+  box-shadow: 0 1px 10px rgba(24, 24, 24, 0.707);
+  gap: 16px;
+}
+
+.item h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item ul li {
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+/*---------- hw2 -----------*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 300px;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.778);
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.03);
+}
+
+/*----------- hw3 --------*/
+
+#name-input {
+  width: 360px;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  border: 1px solid #1e1b1b;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(23, 23, 22, 0.205);
+  transition: border-color 0.3s ease;
+}
+
+#name-input:focus {
+  outline: none;
+  border-color: #0f7ae4;
+  box-shadow: 0 0 0 2px rgba(27, 117, 208, 0.704);
+}
+
+#name-input::placeholder {
+  color: #999;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  color: #2e2f42;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+
+#name-output {
+  font-weight: 600;
+  color: #10bf50ee;
+}
+
+/*-------- hw4 --------*/
+.login-form {
+  width: 100%;
+  max-width: 408px;
+  padding: 24px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #2e2f42;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.login-form input {
+  padding: 8px 12px;
+  margin-top: 8px;
+  font-size: 16px;
+  border: 1px solid #636161c5;
+  border-radius: 4px;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.login-form input:hover {
+  outline: none;
+  border-color: #0c0c0c;
+  box-shadow: 0 0 0 2px rgba(7, 131, 239, 0.896);
+}
+
+.login-form button[type='submit'] {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form button[type='submit']:hover {
+  background-color: #6c8cff;
+}
+/* 5 */
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 50px;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 345px;
+  height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.color {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333333;
+}
+
+.change-color {
+  padding: 12px 24px;
+  background-color: #4e75ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.change-color:hover {
+  background-color: #0b04ce;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.494);
+}
+
+.widget p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #555555;
+}
